@@ -1,0 +1,116 @@
+@import '../node_modules/modern-normalize/modern-normalize.css';
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: rgb(14, 38, 66);
+  }
+
+
+/* Título único */
+
+h1 {
+    text-align: center;
+    margin: 20px 0;
+    color: aliceblue;
+}
+
+/* Estilos da Calculadora */
+
+#calculator {
+    background-color: rgb(57, 117, 151);
+    width: 400px;
+    height: 450px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 30px;
+    padding-bottom: 50px;
+}
+
+#screen-container {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2%;
+    width: 258px;
+    border: 1px solid rgb(155, 174, 180);
+    text-align: right;
+    box-sizing: border-box;
+    overflow: hidden;
+    white-space: nowrap;
+    background-color: rgba(0, 0, 0, 0.397);
+}
+
+#upper-number, #result-number {
+    float: right;
+    color: white;
+    margin-right: 5px;
+}
+
+#result-number {
+    font-weight: bold;
+    margin-top: 5px;
+    font-size: 22px;
+    clear:both;
+}
+
+/* Botões */
+
+.btn-container {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px;
+    text-align: center;
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+
+
+.btn {
+    width: 50px;
+    height: 50px;
+    margin: 0 7.5px;
+    line-height: 50px;
+    text-align: center;
+	box-shadow: 3px 4px 0px 0px #1564ad;
+	background:linear-gradient(to bottom, #5697d8 5%, #2273c4 100%);
+	background-color:#79bbff;
+	border-radius:5px;
+	border:1px solid #337bc4;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #528ecc;
+    font-size: 18px;
+}
+
+.btn:hover {
+    background:linear-gradient(to bottom, #378de5 5%, #79bbff 100%);
+	background-color:#378de5;
+}
+
+.btn:active {
+    position:relative;
+	top:1px;
+}
+
+#ac-btn {
+    margin-left: -200px;
+}
+
+#division-btn {
+    position: absolute;
+    right: 14px;
+}
+
+#zero-btn {
+    width: 63%;
+}
+
+#ac-btn, #division-btn, #multiplication-btn, #minus-btn, #plus-btn, #equals-btn, #zero-btn {
+    font-weight: 300;
+    font-size: 20px;
+}
